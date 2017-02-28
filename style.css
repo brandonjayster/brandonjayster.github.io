@@ -1,0 +1,13 @@
+.navbar{
+	 border-radius: 0px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  border-radius: 0px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
