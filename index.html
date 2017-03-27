@@ -85,45 +85,35 @@
     height: 0;
 }
 	
+	.button{ 
+	display: inline-block;      
+	width: 150px; 
+	padding: 20px; 
+	text-align: center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	border: 1px solid #888;
+}
+	
+	@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.08); }
+	50% { transform: scale(1); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.05); }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+	
 	.pulse {
-  margin:100px;
-  display: block;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: #cca92c;
-  cursor: pointer;
-  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
-  animation: pulse 2s infinite;
-}
-.pulse:hover {
-  animation: none;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
-  }
-  70% {
-      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-  }
-  100% {
-      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-  }
-}
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
-    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
-  }
-  70% {
-      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-  }
-  100% {
-      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-  }
+	animation-name: pulse_animation;
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
  	
 </style>
@@ -232,7 +222,7 @@ I love creating clean and easy to navigate websites. The languages I work with a
 <div class="container-fluid" id="Contact" style="background-color: black; height: 50vh;">
   <div class="section">
   <h1 style="color: orange; text-align: center;">
-    Ready to start your project? <a href="mailto:jayster@protonmail.com"><i class="fa fa-envelope" aria-hidden="true" class="pulse"></i></a>
+    Ready to start your project? <a href="mailto:jayster@protonmail.com"><i class="fa fa-envelope" aria-hidden="true" class="button pulse"></i></a>
   </h1>
     
   </div>
