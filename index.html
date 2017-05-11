@@ -1,59 +1,96 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <script> alert("This site is in the process of being redesigned"); </script>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: grey;
-}
-.bg{
-  position: relative;
-  opacity: 0.65;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bg {
-  background-image: url("img/1.jpg");
-  height: 100%;
-}
-.caption {
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <style>
+      .img{
+        height: 150px;
+        width: 300px;
+        }
+        /*.parallax-container {
+   height: "300px";
+}*//*#name {
   position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: grey;
-}
-.caption span.border {
-  background-color: black;
-  opacity: 50px;
-  border-radius: 20px;
-  color: grey;
-  padding: 18px;
-  font-size: 40px;
-  letter-spacing: 10px;
-}
-h3 {
-  letter-spacing: 5px;
-   font-size: 70px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-</style>
-</head>
-<body>
-<div class="bg"></div>
-<div class="bgimg-1">
-  <div class="caption">
-    <span class="border">Morgans</span><br>
-    <span class="border">Web Development</span>
-    <h3><a href="about.html" style="text-decoration: none; color: black; font-size: 70px;">About</a></h3> <hr> <h3><a href="contact.html" style="text-decoration: none; color: black; font-size: 70px;"> Contact</a></h3>
+  position: fixed;
+  font-size: 20px;
+}*/
+    </style>
+
+    <body>
+    
+<div class="parallax-container">
+<div class="container"> 
+<h1 style="text-align: center; color: white; background-color: black; border-radius: 10px;">Morgan's Web Development</h1>
+<img src="img/me.jpg" style="border-radius: 50%; height: 200px; width: 200px; opacity: 0.9;" class="me">
+    <div class="parallax">
+    <img src="img/city.jpg"> 
+    </div>
+    </div>
   </div>
-</div>
-</body>
-</html>
+  <div class="container z-depth-2" style="margin-bottom: 20px;">
+    <p>I am a young self taught web developer from Tennessee. I create clean websites for small and medium businesses for a fair price. The langauges I work with are HTML5, CSS3, Javascript. I have expeince in WordPress and Joomla and some Django</p>
+  </div><br><br>
+
+  <div class="section white z-depth-2">
+    <div class="row container">
+      <h2 class="header center-align">Services Include</h2>
+      <h3 class="grey-text text-darken-3 lighten-3">Responsive Design</h3> <img src="img/res.png" class="img">
+    </div>
+  </div>
+  <div class="parallax-container">
+  <div class="row container">
+      <h2 class="header center-align" style="color: blue;">Social Media Marketing</h2>
+      <img src="img/ss.png" style="height: 200px; width: 400px;">
+    </div>
+    <div class="parallax"><img src="img/back.jpg" class="imge"></div>
+  </div>
+  <div class="card-panel">
+      <span class="blue-text text-darken-2">Lets Talk? Email: brandon101morgan@outlook.com</span>
+    </div>
+
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/morganswebdesign/">facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/onlinedesignseo">Twitter</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016-2017 Copyright Morgan's Web Development
+            </div>
+          </div>
+        </footer>
+
+ 
+
+
+
+
+
+
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <script>$(document).ready(function(){
+      $('.parallax').parallax();
+    });</script>
+    </body>
+  </html>
