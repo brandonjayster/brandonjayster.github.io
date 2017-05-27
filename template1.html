@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>template design</title>
+	<title>Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,21 +15,38 @@
 <!-- CSS3 -->
 <style type="text/css">
 .txt{
-	color: white;
 	text-align: center;
-	
+	font-weight: 700px;
+	font-size: 3em;
 }
-.row{
-	color: blue;
-}
-#row{
-	margin-bottom: 10vh;
+.jumbotron{
+	margin-bottom: 0px;
 }
 #features{
-	margin-top: 20vh;
+	margin-top: 5em;
 }
-#fb{
-	margin-right: 20px;
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.img1{
+	width: 300px;
+	height: 200px;
+	margin: auto;
+	display: block;
+	border-radius: 5px;
+}
+#jumbo{
+	margin-bottom: 2em;
+}
+img{
+	width: 300px;
+	height: 200px;
 }
 
 </style>
@@ -37,7 +54,8 @@
 <!-- Begin site-->
 <body>
 <div class="jumbotron">
-	<h3 class="txt">Site Logo</h3>
+	<h3 class="txt">Site Logo/Text</h3>
+	<img src="https://image.freepik.com/free-vector/city-skyline-logo-in-blue-tones_1043-137.jpg" class="img1">
 </div>
 <!-- Nav menu -->
 <nav class="navbar navbar-inverse" style="text-align: center;">
@@ -56,9 +74,7 @@
         </li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-        <li><h4 style="color: white;"><i class="fa fa-facebook" aria-hidden="true" id="fb"></i></h4></li>
-        <li><h4 style="color: white;"><i class="fa fa-instagram" aria-hidden="true"></i></h4></li>
-      </ul>
+       </ul>
     </div>
   </div>
 </nav>
@@ -73,58 +89,29 @@
 
 <!-- Begin Features -->
 <div class="container-fluid" style="text-align: center;" id="features">
-<div class="row" id="row" style="background-color: cyan;">
-	<div class="col-sm-4" style="margin-bottom: 10px;">
+<div class="row" id="row">
+	<div class="col-sm-4">
 	<img src="" alt="Some image">
-		<h2>Feature 1</h2>
+		<h2>Slim Design</h2>
 	</div>
-	<div class="col-sm-4" style="margin-bottom: 10px;">
+	<div class="col-sm-4">
 	<img src="" alt="Some image">
-		<h2>Feature 2</h2>
+		<h2>Fully Responsive</h2>
 	</div>
-	<div class="col-sm-4" style="margin-bottom: 10px;">
+	<div class="col-sm-4">
 	<img src="" alt="Some image">
-		<h2>Feature 3</h2>
+		<h2>SEO friendly</h2>
+
 	</div>
 </div>
 <!-- end features-->
-
-<hr>
-<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-<hr>
-<div class="table-responsive">
-<table class="table table-striped" style="text-align: center;">
-	<thead>
-	<tr>
-		<th style="text-align: center;">Products</th>
-		<th style="text-align: center;">Prices</th>
-		<th style="text-align: center;">Monthly fees</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Chairs</td>
-			<td>$200</td>
-			<td>warranty</td>
-		</tr>
-		<tr>
-			<td>Boats</td>
-			<td>$5000</td>
-			<td>warranty</td>
-		</tr>
-	</tbody>
-</table>
+<div class="jumbotron" id="jumbo">
+	More Info about your church or business
 </div>
-<br>
-<br>
-<footer class="footer" style="position: absolute;">
-	<em>copyright 2017 template designed by Morgan's Web Development</em>
-</footer>
 
-
-
-
-
+<div class="panel-footer">
+	<em>Template Designed by Morgan's Web Design</em>
+</div>
 
 </body>
 </html>
