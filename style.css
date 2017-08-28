@@ -1,0 +1,225 @@
+/*!
+Styles for full screen background video demo
+*/
+/* =============================================================================
+  RESETS
+============================================================================= */
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+  HTML, BODY
+============================================================================= */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+@media screen and (min-height: 700px) {
+  html, body {
+    /*height: 100%;*/
+  }
+}
+
+body {
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'helvetica neue', sans-serif;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*********************
+VERTICAL RHYTHYM
+*********************/
+
+.content {
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .content {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content {
+    font-size: 15px;
+  }
+}
+
+
+/* =============================================================================
+  ITEMS
+============================================================================= */
+
+h1 {
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.35;
+  font-size: 42px;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'helvetica neue', sans-serif !important;
+  font-weight: 300 !important;
+  line-height: 1.4 !important;
+}
+
+p {
+  margin: 0 0 1.25em 0;
+  line-height: 1.5;
+  font-family: 'Montserrat', 'helvetica neue', sans-serif;
+}
+
+/* =============================================================================
+  CONTENT
+============================================================================= */
+
+.content {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .flexed {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .flexed div:first-child {
+    flex-grow: 1;
+  }
+}
+
+.fa-2x {
+  font-size: 1.75em;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  height: 80vh;
+  height: calc(100% - 150px);
+}
+
+.nav-items a {
+  margin: 0 1.5em;
+}
+
+@media screen and (min-height: 830px) and (max-width: 510px) {
+  height: calc(100% - 400px);
+}
+
+@media screen and (max-width: 480px) {
+  .fa-2x {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+  .nav-items a {
+    display: inline-block;
+    margin: 0 1.5em;
+  }
+  .logo {
+    height: calc(100% - 190px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-items a {
+    margin: 0 2em;
+  }
+  .fa-2x {
+    font-size: 2.25em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-items a {
+    margin: 0 3em;
+  }
+  .fa-2x {
+    font-size: 2.5em;
+  }
+}
+
+a, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fbd005;
+  text-decoration: none;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.centered {
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,.2);
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.centered {
+  width: 96%;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -moz-transform: translate(-50%, -50%) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .centered {
+    top: 52%;
+  }
+}
